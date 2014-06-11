@@ -239,7 +239,7 @@ public class GlowPadView extends View {
 
         final boolean transparent = Settings.System.getInt(
                 context.getContentResolver(),
-                Settings.System.INCALL_GLOWPAD_TRANSPARENCY, 0) == 1;
+                Settings.System.INCALL_GLOWPAD_TRANSPARENCY, 1) == 1;
         if (transparent) {
             this.setBackgroundResource(R.color.transparent_glowpad_background);
         }
